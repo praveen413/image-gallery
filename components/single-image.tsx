@@ -15,6 +15,7 @@ export function SingleImage(props: any) {
       className="h-64 bg-gray-200 relative group  overflow-hidden"
     >
       <Image
+        key={image.id}
         src={image.src.large}
         alt={image.alt}
         fill={true}
